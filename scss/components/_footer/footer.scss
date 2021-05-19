@@ -1,0 +1,21 @@
+footer {
+  background-color: #2d2d2d;
+  padding: 50px 0;
+  font-family: $ffamily;
+  .footer_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      color: white;
+      color: rgb(184, 184, 184);
+      font-size: 18px;
+    }
+    ul {
+      display: flex;
+      li:not(:last-child) {
+        padding-right: 20px;
+      }
+    }
+  }
+}

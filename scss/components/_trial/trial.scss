@@ -1,0 +1,90 @@
+.trial {
+  padding: 110px 0;
+  background-color: white;
+  font-family: $ffamily;
+  .top_trial {
+    padding-bottom: 70px;
+    h3 {
+      @include hsize(35px);
+      padding-bottom: 45px;
+    }
+    p {
+      max-width: 750px;
+      line-height: 1.7;
+      font-size: $stsize;
+      padding-bottom: 45px;
+    }
+    .border {
+      @extend %border;
+    }
+  }
+  .bottom_trial {
+    display: flex;
+
+    .send {
+      width: 70%;
+      padding-right: 100px;
+      div {
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+
+        input {
+          width: 335px;
+          height: 70px;
+          background-color: #e5e5e5;
+          border-radius: 8px;
+          border: 0;
+          padding: 30px 60px;
+          font-size: 17px;
+        }
+      }
+      textarea {
+        resize: none;
+        width: 100%;
+        height: 250px;
+        padding: 35px 60px;
+        border: 0;
+        background-color: #e5e5e5;
+        border-radius: 8px;
+        font-size: 17px;
+        font-family: $ffamily;
+        margin-bottom: 50px;
+      }
+      button {
+        @include button_color($artcolor, $txtcolor);
+        @include butt(20px 70px);
+        @include hsize(20px);
+        width: 100%;
+      }
+      button:hover {
+        @include button_color($txtcolor, $artcolor);
+      }
+    }
+  }
+  .contact {
+    width: 30%;
+    padding: 125px 60px;
+    background-color: #2d2d2d;
+    color: white;
+    h4 {
+      @include hsize(15px);
+      padding-bottom: 40px;
+    }
+    ul {
+      li:not(:last-child) {
+        padding-bottom: 30px;
+      }
+      li {
+        line-height: 2;
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.8);
+
+        a {
+          color: rgba(255, 255, 255, 0.8);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

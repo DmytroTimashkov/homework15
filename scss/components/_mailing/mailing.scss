@@ -1,0 +1,40 @@
+.mailing {
+  background-color: #f5f0dd;
+  padding: 140px 0;
+  font-family: $ffamily;
+  .mailing_wrapper {
+    h3 {
+      font-size: 40px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      padding-bottom: 40px;
+    }
+    p {
+      color: white;
+      font-size: $stsize;
+      text-align: center;
+      padding-bottom: 60px;
+    }
+    .subscribe {
+      display: flex;
+      justify-content: center;
+      input {
+        padding: 35px 40px;
+        width: 500px;
+        border-radius: 8px;
+        font-size: $stsize;
+        margin-right: 30px;
+        border: 0;
+      }
+      button {
+        @include button_color($artcolor, $txtcolor);
+        @include butt(20px 70px);
+        @include hsize(20px);
+      }
+      button:hover {
+        @include button_color($txtcolor, $artcolor);
+      }
+    }
+  }
+}
